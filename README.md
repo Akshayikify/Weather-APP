@@ -44,8 +44,6 @@ Weather_app/
 ---
 
 ## Installation and Setup
-
-### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/weather-app.git
 python -m venv weather_env
