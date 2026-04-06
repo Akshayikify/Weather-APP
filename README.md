@@ -45,7 +45,7 @@ Weather_app/
 
 ## Installation and Setup
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Akshayikify/Weather-APP.git
 python -m venv weather_env
 source weather_env/bin/activate   # Linux/Mac
 weather_env\Scripts\activate      # Windows
