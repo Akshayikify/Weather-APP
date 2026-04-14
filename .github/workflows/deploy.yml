@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Python 3.11
@@ -25,14 +25,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests (example)
+      - name: Run linter
         run: |
-          # Add your test commands here
-          echo "Running tests..."
-          # For example:
-          # pytest
+          # Add your linter command here, for example:
+          # pylint your_module.py
+          echo "Linter check skipped"
 
-      - name: Deploy (example)
+      - name: Run tests
         run: |
-          # Add your deployment commands here
-          echo "Deploying..."
+          # Add your test execution command here, for example:
+          # python -m unittest discover
+          echo "Test execution skipped"
+
+      - name: Deploy to Production
+        run: |
+          echo "Deploying to production..."
+          # Add your deployment steps here, for example:
+          # scp -r your_project user@your_server:/var/www/
+          echo "Deployment complete."
